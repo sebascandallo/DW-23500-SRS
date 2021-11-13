@@ -4,48 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Patio Alameda" content="Patio de comida con gastronomía urbana, donde podes difrutar todo en un solo lugar.">
-    <title>Patio Alameda</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="source/icon-ferias.png" type="image/x-icon">
+    <!--Metas para el SEO-->
+    <meta name="Patio Alameda" content="Te presentamos un lugar super cómodo con una variedad de locales gastronómicos para que puedas disfrutar de una expereiencia única, donde podés disfrutar del plato, la bebida y el postre que cada uno desee y compartir un momento ideal.">
+    <meta name="author" content="Sebastian Scandallo">
+    <title>PATIO ALAMEDA | Gastronomía Urbana</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./source/icons/icon-ferias.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="source/Logo-Patio-Alameda.jpg" alt="Logo-Patio-Alameda" title="Home"></a>
-            <ul>
-                <li><a href="#el_patio">El Patio</a></li>
-                <li><a href="routes/carta/la-carta.html">La carta</a></li>
-                <li><a href="routes/eventos/eventos.html">Eventos</a></li>
-                <li><a href="routes/horarios/horarios.html">Horarios</a></li>
-                <li><a href="routes/ubicacion/ubicacion.html">Ubicación</a></li>
-                <li><a href="routes/reservas/reservas.html">Reservas</a></li>
-                <li><a href="routes/promociones/promociones.html">Promociones</a></li>
-            </ul>
+            <div>
+                <a href="index.html"><img src="./source/logo/logo-patio-alameda.jpeg" alt="logo-patio-alameda" title="Home" class="logo-nav"></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#el_patio">El Patio</a></li>
+                    <li><a href="./routes/carta/la-carta.html">La carta</a></li>
+                    <li><a href="./routes/eventos/eventos.html">Eventos</a></li>
+                    <li><a href="./routes/horarios/horarios.html">Horarios</a></li>
+                    <li><a href="./routes/ubicacion/ubicacion.html">Ubicación</a></li>
+                    <li><a href="./routes/reservas/reservas.html">Reservas</a></li>
+                    <li><a href="./routes/promociones/promociones.html">Promociones</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <div>
-            <img src="source/imagen-del-patio.jpg" alt="imagen-del-patio">
+            <img src="./source/img/El-patio-afuera.png" alt="imagen-del-patio" class="imagen-del-patio">
         </div>
         <article>
-            <h1 id="el_patio">PATIO ALAMEDA</h1>
+            <hr>
+            <h1 id="el_patio">PATIO<br>ALAMEDA</h1>
             <h4>-GASTRONOMÍA URBANA-</h4>
-            <p>Te presentamos una variedad de locales gastronómicos para que puedas disfrutar de una expereiencia única, donde podés disfrutar el plato, bebida y postre que cada uno desee y compartir un momento ideal.</p>
+            <p>Te presentamos un lugar super cómodo con una variedad de locales gastronómicos para que puedas disfrutar de una expereiencia única, donde podés disfrutar del plato, la bebida y el postre que cada uno desee y compartir un momento ideal.</p>
+            <hr>
+            <h4>Hay equipo !</h4>
         </article>
-        <aside>
-            <p>Destacados</p>
-        </aside>
+        <div>
+            <div class="logos123-index">
+                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-pinto-una-birra.jpeg" alt="logo-pinto-una-birra" class="logos-index"></a>
+                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-la-cuadra.jpeg" alt="logo-la-cuadra" class="logos-index"></a>
+                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-papas.jpeg" alt="logo-papas" class="logos-index"></a>
+            </div>
+            <div class="logos456-index">
+                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-social-cafe.jpeg" alt="logo-social-cafe" class="logos-index"></a>
+                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-trevi.jpeg" alt="logo-trevi" class="logos-index"></a>
+                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-drink-box.jpeg" alt="logo-drink-box" class="logos-index"></a>
+            </div>
+        </div>        
     </main>
     <footer>
-        <img src="source/Logo-Patio-Alameda.jpg" alt="Logo-Patio-Alameda-Foot">
-        <h3>Seguinos</h3>
-        <ul>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-            <li><a href="index.html" target="_blank">www.patioalameda.com.ar</a></li>
-        </ul>        
+        <!--Div 100% footer.-->
+        <div>
+            <!--Logo footer.-->
+            <div>
+                <hr>
+                <h4>PATIO<br>ALAMEDA</h4>
+                <h5>-GASTRONOMÍA URBANA-</h5>
+                <hr>
+            </div>
+            <!--Ruta footer.-->
+            <div>
+                <ul>
+                    <li><a href="#el_patio">El Patio</a></li>
+                    <li><a href="./routes/carta/la-carta.html">La carta</a></li>
+                    <li><a href="./routes/eventos/eventos.html">Eventos</a></li>
+                    <li><a href="./routes/horarios/horarios.html">Horarios</a></li>
+                    <li><a href="./routes/ubicacion/ubicacion.html">Ubicación</a></li>
+                    <li><a href="./routes/reservas/reservas.html">Reservas</a></li>
+                    <li><a href="./routes/promociones/promociones.html">Promociones</a></li>
+                </ul>
+            </div>
+            <!--Redes sociales.-->
+            <div>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                    <li><a href="index.html" target="_blank">www.patioalameda.com.ar</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>2020 © Patio Alameda / <span lang="en">powered by</span> Sebascandallo</p>
+        </div>
     </footer>
 </body>
 </html>
