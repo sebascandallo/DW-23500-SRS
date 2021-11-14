@@ -18,8 +18,8 @@ footer {
     margin: 20px 80px;
 }
 
-/*centrado del div*/
-.logos123-index, .logos456-index {
+/*DIV centrado*/
+.logos123-index, .logos456-index, .div-carta {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -30,6 +30,32 @@ footer {
     width: 120px;
 }
 
-.imagen-del-patio {
+.imagen-del-patio, .la-carta {
     width: 100%;
+}
+
+.logos-carta {
+    height: 200px;
+    width: 200px;
+    margin: 5px 20px
+}
+
+.div-header, .div-logos-index {
+    background-color: #6CEDD3;
+}
+
+.article {
+    background-color: #CFABD1;
+}
+
+.div-footer {
+    background-color: #9E643C;
+}
+
+.div-autor {
+    background-color: #000000;
+}
+
+.autor {
+    color: #F8EFEF;
 }
