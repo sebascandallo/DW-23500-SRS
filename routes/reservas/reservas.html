@@ -10,9 +10,10 @@
     <link rel="shortcut icon" href="../../source/icons/icon-ferias.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../../index.html"><img src="../../source/logo/logo-patio-alameda.jpeg" alt="logo-patio-alameda" title="Home" class="logo-nav"></a>
+    <header class="header">
+        <div class="container logoNavContainer">
+            <a href="index.html" class="logo"><span class="logoNavLinea1">PATIO<br>ALAMEDA</span><br><span class="logoNavLinea2">- GASTRONOMÍA URBANA -</span></a>
+            <nav class="navigation">
             <ul>
                 <li><a href="../../index.html">El Patio</a></li>
                 <li><a href="../carta/la-carta.html">La carta</a></li>
@@ -24,14 +25,53 @@
             </ul>
         </nav>
     </header>
-    <h1>Reservas</h1>
     <div>
-        <form action="para.php" method="get">
+        <h1>Reservas</h1>
+        <form action="" method="">
+            <p>Elige tu lugar: 
+                <select name="locales" id="">
+                    <option value="0">------------------</option>
+                    <option value="1">Pintó una birra</option>
+                    <option value="2">La cuadra burguer</option>
+                    <option value="3">Papas Social Club</option>
+                    <option value="4">Social café</option>
+                    <option value="5">Trevi Helados</option>
+                    <option value="6">Drink Box</option>
+                    <option value="7">El patio</option>
+                </select>
+            </p>
             <p>Nombre y Apellido: <input type="text" name="nombre-apellido"></p>
             <p>E-Mail: <input type="email" name="email"></p>
             <p>Teléfono: <input type="number" name="tel"></p>
-            <p>Mensaje: <input type="text" name="mensaje" ></p>
+            <p>Mensaje: <input type="text" name="mensaje"></p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar formulario">
         </form>
     </div>
 </body>
+<footer class="footer">
+    <div class="container logoNavContainer">
+    <a href="index.html" class="logo"><span class="logoNavLinea1">PATIO<br>ALAMEDA</span><br><span class="logoNavLinea2">- GASTRONOMÍA URBANA -</span></a>
+            <ul>
+                <li><a href="#el_patio">El Patio</a></li>
+                <li><a href="#">La carta</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Horarios</a></li>
+                <li><a href="#">Ubicación</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Promociones</a></li>
+            </ul>
+            <ul>
+                <li><img src="../../source/icons/instagram.png" alt="logoInstagram" class="favicon"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://web.whatsapp.com/" target="_blank">+54 343 123456</a></li>
+                <li><a href="https://goo.gl/maps/uf6rHR3XjgMNWHPT8" target="_blank">Alameda 000, Paraná - E. R.</a></li>
+                <li><a href="mailto:patioalameda@gmail.com?&subject=Consulta%20sobre%20Patio%Alameda&body=Hola!%20consulto:" target="_blank">patioalameda@gmail.com</a></li>
+            </ul>
+    </div>
+    <div class="copiright">
+        <p>2020 © Patio Alameda / <span lang="en">powered by</span> Sebascandallo</p>
+    </div>
+</footer>
+
 </html>
