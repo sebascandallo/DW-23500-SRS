@@ -1,3 +1,9 @@
+/* Alumno: Sebastián Scandallo - Comisión 23500 - 
+Figma: https://www.figma.com/file/sw3YtaodFpyMfzThLBC2nU/Patio-Alameda?node-id=0%3A1 */
+
+
+/* ***Index*** */
+/* Estilos Generales */
 * {
     margin: 0;
     padding: 0;
@@ -11,44 +17,21 @@ body {
     margin: 0;
 }
 
-
-.imageMain {
-    width: 100%;
-    margin: 0;
-}
-
-.main section p {
-    margin-bottom: 1.6em;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-}
-
-section h1 {
-    padding: 2rem 0;
-}
-
-.logoLinea1 {
-    letter-spacing: 3px;
-    font-size: 1.5em;
-    line-height: 1.1em;
-    color: #333;
-}
-
-.logoLinea2 {
-    letter-spacing: 1.3px;
-    font-size: 1em;
-    line-height: 1.8em;
-    color: rgb(65, 87, 43);
-}
-
 .container {
     width: 85%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
+
+/* Imagen principa, que luego puede ser slider o scroller */
+.imageMain {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* Estilo del HEADER y FOOTER */
 
 .header {
     background: #6cedd3d3;
@@ -82,10 +65,6 @@ section h1 {
     align-items: center;
 }
 
-.logo {
-    text-align: center;
-}
-
 .navigation ul, .footer ul {
     margin: 0;
     padding: 0;
@@ -114,6 +93,54 @@ section h1 {
     font-size: 30px;
 }
 
+
+/*Estilo del main*/
+.main section p {
+    margin-bottom: 1.6em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+section h1 {
+    padding: 2rem 0;
+}
+
+main {
+    background: #CFABD1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.section {
+    padding-bottom: 2rem;
+}
+
+
+/* Estilo del layout logo */
+.logoLinea1 {
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    color: #333;
+}
+
+.logoLinea2 {
+    letter-spacing: 1.3px;
+    font-size: 1em;
+    line-height: 1.8em;
+    color: rgb(65, 87, 43);
+}
+
+.logo {
+    text-align: center;
+}
+
 .tituloSection {
     font-size: 2rem;
 }
@@ -137,19 +164,8 @@ section h1 {
     margin: 20px 0;
 }
 
-
-
 .logos img {
     width: 12rem;
-}
-
-main {
-    background: #CFABD1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding-top: 7rem;
-    padding-bottom: 5rem;
 }
 
 footer {
@@ -163,10 +179,6 @@ footer {
     width: 2rem;
 }
 
-.section {
-    padding-bottom: 2rem;
-}
-
 .copiright {
     background: black;
     width: 100%;
@@ -174,6 +186,8 @@ footer {
     text-align: center;
 }
 
+
+/* *** Carta *** */
 dl dt {
     font-weight: bold;
 }
@@ -186,3 +200,20 @@ dl dt {
 iframe {
     padding: 7rem;
 }
+
+.cartaLogos img {
+    width: 10rem;
+    padding: 0;
+}
+
+.cartaLogos {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* *** Ubicación *** */
+iframe {
+    margin: 0 auto;
+}
+
+/* *** Reservas *** */
