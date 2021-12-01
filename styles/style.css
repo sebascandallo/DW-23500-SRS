@@ -151,21 +151,67 @@ main {
     padding: 2rem 0;
 }
 
-.logos {
+/* .logos {
     border-top:solid 5px black;
     border-right:solid 10px black;
     border-bottom:solid 7px black;
     border-left:solid 12px black;
-}
+} */
 
-.logos123, .logos456 {
+/* .logos123, .logos456 {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
-}
+} */
+
 
 .logos img {
     width: 12rem;
+}
+
+.logos {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "birra cuadra papas"
+        "social trevi drink"
+    ;
+    grid-template-columns: repeat(3, 5fr);
+    grid-template-rows: 1fr repeat(2, 3fr);
+    text-align: center;
+    align-items: center;
+}
+
+.logos img {
+    border-radius: 10%;
+}
+
+#hayEquipo {
+    grid-area: titulo;
+}
+
+#birra {
+    grid-area: birra;
+}
+
+#cuadra {
+    grid-area: cuadra;
+}
+
+#papas {
+    grid-area: papas;
+}
+
+#social {
+    grid-area: social;
+}
+
+#trevi {
+    grid-area: trevi;
+}
+
+#drink {
+    grid-area: drink;
 }
 
 footer {
@@ -186,8 +232,31 @@ footer {
     text-align: center;
 }
 
-
 /* *** Carta *** */
+.cartaLogos {
+    margin-top: 3px;
+    display: grid; 
+    flex-wrap: wrap; 
+    grid-template-areas: 
+        "tituloCarta tituloCarta tituloCarta tituloCarta tituloCarta tituloCarta"
+        "cafe birra cuadra papas trevi drink"
+    ;
+    grid-template-columns: repeat(6, 3fr);
+    grid-template-rows: 1fr 2fr;
+}
+
+.cartaLogos img {
+    text-align: center;
+    margin: .5rem;
+    align-items: center;
+    align-content: center;
+}
+
+.tituloCarta {
+    grid-area: tituloCarta;
+}
+
+
 dl dt {
     font-weight: bold;
 }
@@ -206,14 +275,22 @@ iframe {
     padding: 0;
 }
 
-.cartaLogos {
+/* .cartaLogos {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 /* *** Ubicación *** */
 iframe {
     margin: 0 auto;
 }
 
-/* *** Reservas *** */
+
+/* Eventos */
+
+.mediaLorem {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: stretch;
+}
