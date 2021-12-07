@@ -24,7 +24,7 @@ body {
 }
 
 
-/* Imagen principa, que luego puede ser slider o scroller */
+/* Imagen principal, que luego puede ser slider o scroller */
 .imageMain {
     width: 100%;
     margin: 0;
@@ -32,6 +32,28 @@ body {
 
 
 /* Estilo del HEADER y FOOTER */
+header .container{
+    display: grid;
+    grid-template-areas: 
+        "logo1 nav1"
+        "logo2 nav2"
+    ;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 1fr 0.1fr;
+}
+
+.logoNavLinea1 {
+    grid-area: logo1;
+}
+
+.logoLinea2 {
+    grid-area: logo2;
+}
+
+.navigation {
+    grid-area: nav2;
+    grid-row: end;
+}
 
 .header {
     background: #6cedd3d3;
@@ -113,7 +135,7 @@ main {
     left: 0;
     top: 0;
     width: 100%;
-    padding-top: 7rem;
+    padding-top: 10rem;
     padding-bottom: 5rem;
 }
 
@@ -145,29 +167,6 @@ main {
     font-size: 2rem;
 }
 
-#hayEquipo {
-    font-size: 2rem;
-    text-align: center;
-    padding: 2rem 0;
-}
-
-/* .logos {
-    border-top:solid 5px black;
-    border-right:solid 10px black;
-    border-bottom:solid 7px black;
-    border-left:solid 12px black;
-} */
-
-/* .logos123, .logos456 {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-} */
-
-
-.logos img {
-    width: 12rem;
-}
 
 .logos {
     display: grid;
@@ -176,14 +175,19 @@ main {
         "birra cuadra papas"
         "social trevi drink"
     ;
-    grid-template-columns: repeat(3, 5fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr repeat(2, 3fr);
     text-align: center;
     align-items: center;
+    row-gap: 2rem;
+    width: 96%;
 }
 
-.logos img {
+/* Imgagenes responsive.*/
+.logos img, .main .containerCarta .cartaLogos img, .imagenResponsive {
     border-radius: 10%;
+    width: 60%;
+    height: auto;
 }
 
 #hayEquipo {
@@ -233,7 +237,7 @@ footer {
 }
 
 /* *** Carta *** */
-.cartaLogos {
+.containerCarta .cartaLogos {
     margin-top: 3px;
     display: grid; 
     flex-wrap: wrap; 
@@ -242,7 +246,8 @@ footer {
         "cafe birra cuadra papas trevi drink"
     ;
     grid-template-columns: repeat(6, 3fr);
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: .5fr 1fr;
+    column-gap: 2rem;
 }
 
 .cartaLogos img {
@@ -250,6 +255,7 @@ footer {
     margin: .5rem;
     align-items: center;
     align-content: center;
+    
 }
 
 .tituloCarta {
@@ -270,15 +276,6 @@ iframe {
     padding: 7rem;
 }
 
-.cartaLogos img {
-    width: 10rem;
-    padding: 0;
-}
-
-/* .cartaLogos {
-    display: flex;
-    justify-content: space-between;
-} */
 
 /* *** Ubicación *** */
 iframe {
