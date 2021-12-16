@@ -9,30 +9,76 @@
     <meta name="author" content="Sebastian Scandallo">
     <title>PATIO ALAMEDA | Gastronomía Urbana</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="./source/icons/icon-ferias.png" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <div class="container logoNavContainer">
-            <a href="index.html" class="logo"><span class="logoNavLinea1">PATIO<br>ALAMEDA</span><br><span class="logoNavLinea2">- GASTRONOMÍA URBANA -</span></a>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#el_patio">El Patio</a></li>
-                    <li><a href="./routes/carta/la-carta.html">La carta</a></li>
-                    <li><a href="./routes/eventos/eventos.html">Eventos</a></li>
-                    <li><a href="./routes/horarios/horarios.html">Horarios</a></li>
-                    <li><a href="./routes/ubicacion/ubicacion.html">Ubicación</a></li>
-                    <li><a href="./routes/reservas/reservas.html">Reservas</a></li>
-                    <li><a href="./routes/promociones/promociones.html">Promociones</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="bg-dark text-white d-flex">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top py-3 mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand px-4 text-white" href="./index.html">PATIO ALAMEDA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active px-2 text-white" aria-current="page" href="#elPatio">El Patio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-white" href="./routes/carta/la-carta.html">La carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-white" href="./routes/eventos/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-white" href="./routes/horarios/horarios.html">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-white" href="./routes/ubicacion/ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-white" href="./routes/reservas/reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-2 text-white" href="./routes/promociones/promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled px-2 text-white text-primary text-opacity-50">Tickets Kapanga 15/01</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="imageMain d-block w-100" src="./source/img/El-patio-afuera.png" alt="El patio fachada" data-holder-rendered="true" style="width: 900px; height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img class="imageMain d-block w-100" src="./source/img/la-carta.png" alt="Carta" data-holder-rendered="true" style="width: 900px; height: 400px;">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+    </div>
     <main class="main">
-        <img src="./source/img/El-patio-afuera.png" alt="imagen-del-patio" class="imageMain">
         <div class="container">
             <section class="article">
-                <h1><span class="logoLinea1">PATIO<br>ALAMEDA</span><br><span class="logoLinea2">- GASTRONOMÍA URBANA -</span></h1>
+                <h1 id="elPatio"><span class="logoLinea1">PATIO<br>ALAMEDA</span><br><span class="logoLinea2">- GASTRONOMÍA URBANA -</span></h1>
                 <p>Te presentamos un lugar super cómodo con una variedad de locales gastronómicos para que puedas disfrutar de una expereiencia única, donde podés disfrutar del plato, la bebida y el postre que cada uno desee y compartir un momento ideal.</p>
                 <h2>Servicios</h2>
                 <p><span class="emoji">🍔</span> Nuestro servicio es Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus voluptas expedita sit quis quos amet obcaecati quas? Esse fugiat voluptas error? Blanditiis dolor facere quos debitis ex neque error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laborum dignissimos cupiditate neque consequuntur quis error dicta labore enim, consectetur necessitatibus aut molestias nam sunt? Eveniet temporibus fuga accusantium voluptatum?</p>
@@ -59,7 +105,7 @@
         <div class="container logoNavContainer">
         <a href="index.html" class="logo"><span class="logoNavLinea1">PATIO<br>ALAMEDA</span><br><span class="logoNavLinea2">- GASTRONOMÍA URBANA -</span></a>
                 <ul>
-                    <li><a href="#el_patio">El Patio</a></li>
+                    <li><a href="#elPatio">El Patio</a></li>
                     <li><a href="./routes/carta/la-carta.html">La carta</a></li>
                     <li><a href="./routes/eventos/eventos.html">Eventos</a></li>
                     <li><a href="./routes/horarios/horarios.html">Horarios</a></li>
@@ -79,5 +125,9 @@
             <p>2020 © Patio Alameda / <span lang="en">powered by</span> Sebascandallo</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

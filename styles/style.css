@@ -53,6 +53,7 @@ header .container{
 .navigation {
     grid-area: nav2;
     grid-row: end;
+    display: flex;
 }
 
 .header {
@@ -75,10 +76,6 @@ header .container{
     letter-spacing: 5px;
     font-size: 1.3em;
     color: #333;
-}
-
-.logoNavLinea2 {
-    color: rgb(65, 87, 43);
 }
 
 .logoNavContainer {
@@ -107,7 +104,7 @@ header .container{
 }
 
 .navigation ul li a:hover {
-    background: #49ebca;
+    background: #4c4e4e3d;
     border-radius: 10px;
 }
 
@@ -135,7 +132,6 @@ main {
     left: 0;
     top: 0;
     width: 100%;
-    padding-top: 10rem;
     padding-bottom: 5rem;
 }
 
