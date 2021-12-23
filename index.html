@@ -21,30 +21,30 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="containerBar collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="containerBar__menu nav-item">
                             <a class="nav-link active px-2 text-white" aria-current="page" href="#elPatio">El Patio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="containerBar__menu nav-item">
                             <a class="nav-link px-2 text-white" href="./routes/carta/la-carta.html">La carta</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="containerBar__menu nav-item">
                             <a class="nav-link px-2 text-white" href="./routes/eventos/eventos.html">Eventos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="containerBar__menu nav-item">
                             <a class="nav-link px-2 text-white" href="./routes/horarios/horarios.html">Horarios</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="containerBar__menu nav-item">
                             <a class="nav-link px-2 text-white" href="./routes/ubicacion/ubicacion.html">Ubicación</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="containerBar__menu nav-item">
                             <a class="nav-link px-2 text-white" href="./routes/reservas/reservas.html">Reservas</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="containerBar__menu nav-item dropdown">
                             <a class="nav-link px-2 text-white" href="./routes/promociones/promociones.html">Promociones</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="containerBar__menu--disabled nav-item">
                             <a class="nav-link disabled px-2 text-white text-primary text-opacity-50">Tickets Kapanga 15/01</a>
                         </li>
                     </ul>
@@ -78,13 +78,14 @@
     <main class="main">
         <div class="container">
             <section class="article">
-                <div class="fondo col-md-6 p-lg-5 mx-auto my-5">
-                    <h1 id="elPatio"><span class="display-4 fw-normal">PATIO ALAMEDA</span></h1>
+                <div class="articleSection col-md-6 p-lg-5 mx-auto my-5">
+                    <h1 id="elPatio"><span class="articleSection__h1 display-4 fw-normal">PATIO ALAMEDA</span></h1>
                     <br>
-                    <h4>- GASTRONOMÍA URBANA -</h4>
-                    <p class="lead fw-normal">Te presentamos un lugar super cómodo con una variedad de locales gastronómicos para que puedas disfrutar de una expereiencia única, donde podés disfrutar del plato, la bebida y el postre que cada uno desee y compartir un momento ideal.</p>
+                    <h4 class="articleSection__h4">- GASTRONOMÍA URBANA -</h4>
+                    <p class="articleSection__p lead fw-normal">Te presentamos un lugar super cómodo con una variedad de locales gastronómicos para que puedas disfrutar de una expereiencia única, donde podés disfrutar del plato, la bebida y el postre que cada uno desee y compartir un momento ideal.</p>
                 </div>
-                <h2>Servicios</h2>
+                <div>
+                <h2 class="">Servicios</h2>
                 <p><span class="emoji">🍔</span> Nuestro servicio es Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus voluptas expedita sit quis quos amet obcaecati quas? Esse fugiat voluptas error? Blanditiis dolor facere quos debitis ex neque error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laborum dignissimos cupiditate neque consequuntur quis error dicta labore enim, consectetur necessitatibus aut molestias nam sunt? Eveniet temporibus fuga accusantium voluptatum?</p>
                 <p><span class="emoji">🍟</span> Nuestro servicio es Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus voluptas expedita sit quis quos amet obcaecati quas? Esse fugiat voluptas error? Blanditiis dolor facere quos debitis ex neque error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laborum dignissimos cupiditate neque consequuntur quis error dicta labore enim, consectetur necessitatibus aut molestias nam sunt? Eveniet temporibus fuga accusantium voluptatum?</p>
                 <p><span class="emoji">🍺</span> Nuestro servicio es Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus voluptas expedita sit quis quos amet obcaecati quas? Esse fugiat voluptas error? Blanditiis dolor facere quos debitis ex neque error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laborum dignissimos cupiditate neque consequuntur quis error dicta labore enim, consectetur necessitatibus aut molestias nam sunt? Eveniet temporibus fuga accusantium voluptatum?</p>
@@ -93,15 +94,16 @@
                 <p><span class="emoji">☕🥐</span> Nuestro servicio es Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus voluptas expedita sit quis quos amet obcaecati quas? Esse fugiat voluptas error? Blanditiis dolor facere quos debitis ex neque error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laborum dignissimos cupiditate neque consequuntur quis error dicta labore enim, consectetur necessitatibus aut molestias nam sunt? Eveniet temporibus fuga accusantium voluptatum?</p>
                 <p><span class="emoji">💃🏾🕺🏻</span> Nuestro servicio es Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus voluptas expedita sit quis quos amet obcaecati quas? Esse fugiat voluptas error? Blanditiis dolor facere quos debitis ex neque error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laborum dignissimos cupiditate neque consequuntur quis error dicta labore enim, consectetur necessitatibus aut molestias nam sunt? Eveniet temporibus fuga accusantium voluptatum?</p>
                 <hr>
+                </div>
             </section>
             <div class="logos">
-                <h2 id="hayEquipo">Hay equipo !</h2>
-                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-pinto-una-birra.jpeg" alt="logo-pinto-una-birra" id="birra"></a>
-                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-la-cuadra.jpeg" alt="logo-la-cuadra" id="cuadra"></a>
-                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-papas.jpeg" alt="logo-papas" id="papas""></a>
-                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-social-cafe.jpeg" alt="logo-social-cafe" id="cafe"></a>
-                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-trevi.jpeg" alt="logo-trevi" id="trevi"></a>
-                <a href="./routes/carta/la-carta.html"><img src="./source/logo/logo-drink-box.jpeg" alt="logo-drink-box" id="drink"></a>
+                <h2 class="logos__titulo" id="logos__hayEquipo">Hay equipo !</h2>
+                <a class="logos__logo--birra" href="./routes/carta/la-carta.html"><img class="logos__responsive" src="./source/logo/logo-pinto-una-birra.jpeg" alt="logo-pinto-una-birra"></a>
+                <a class="logos__logo--cuadra" href="./routes/carta/la-carta.html"><img class="logos__responsive" src="./source/logo/logo-la-cuadra.jpeg" alt="logo-la-cuadra"></a>
+                <a class="logos__logo--papas" href="./routes/carta/la-carta.html"><img class="logos__responsive" src="./source/logo/logo-papas.jpeg" alt="logo-papas"></a>
+                <a class="logos__logo--social" href="./routes/carta/la-carta.html"><img class="logos__responsive" src="./source/logo/logo-social-cafe.jpeg" alt="logo-social-cafe"></a>
+                <a class="logos__logo--trevi" href="./routes/carta/la-carta.html"><img class="logos__responsive" src="./source/logo/logo-trevi.jpeg" alt="logo-trevi"></a>
+                <a class="logos__logo--drink" href="./routes/carta/la-carta.html"><img class="logos__responsive" src="./source/logo/logo-drink-box.jpeg" alt="logo-drink-box"></a>
             </div>
         </div>
     </main>

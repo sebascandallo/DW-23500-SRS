@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Patio Alameda" content="Patio de comida con gastronomía urbana, donde podes difrutar todo en un solo lugar.">
-    <title>Patio Alameda</title>
+    <!--Metas para el SEO-->
+    <meta name="Patio Alameda" content="Te presentamos un lugar super cómodo con una variedad de locales gastronómicos para que puedas disfrutar de una expereiencia única, donde podés disfrutar del plato, la bebida y el postre que cada uno desee y compartir un momento ideal.">
+    <meta name="author" content="Sebastian Scandallo">
+    <title>PATIO ALAMEDA | Gastronomía Urbana</title>
     <link rel="stylesheet" href="../../styles/style.css">
-    <link rel="shortcut icon" href="../../source/icons/icon-ferias.png" type="image/x-icon">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./source/icons/icon-ferias.png" type="image/x-icon">    
+    <link rel="shortcut icon" href="./source/icons/icon-ferias.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -20,30 +21,30 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="containerBar collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="containerBar__menu nav-item">
                             <a class="nav-link active px-2 text-white" aria-current="page" href="../../index.html">El Patio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2 text-white" href="../carta/la-carta.html">La carta</a>
+                        <li class="containerBar__menu nav-item">
+                            <a class="nav-link px-2 text-white" href="../../routes/carta/la-carta.html">La carta</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="containerBar__menu nav-item">
                             <a class="nav-link px-2 text-white" href="#">Eventos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2 text-white" href="../horarios/horarios.html">Horarios</a>
+                        <li class="containerBar__menu nav-item">
+                            <a class="nav-link px-2 text-white" href="../../routes/horarios/horarios.html">Horarios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2 text-white" href="../ubicacion/ubicacion.html">Ubicación</a>
+                        <li class="containerBar__menu nav-item">
+                            <a class="nav-link px-2 text-white" href="../../routes/ubicacion/ubicacion.html">Ubicación</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2 text-white" href="../reservas/reservas.html">Reservas</a>
+                        <li class="containerBar__menu nav-item">
+                            <a class="nav-link px-2 text-white" href="../../routes/reservas/reservas.html">Reservas</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link px-2 text-white" href="../promociones/promociones.html">Promociones</a>
+                        <li class="containerBar__menu nav-item dropdown">
+                            <a class="nav-link px-2 text-white" href="../../routes/promociones/promociones.html">Promociones</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="containerBar__menu--disabled nav-item">
                             <a class="nav-link disabled px-2 text-white text-primary text-opacity-50">Tickets Kapanga 15/01</a>
                         </li>
                     </ul>
@@ -52,20 +53,20 @@
         </nav>
     </header>
     <main>
-        <h1>Eventos</h1>
-        <article class="article">
-            <div class="lorem">
-                <p>18/12/21 - <strong>LOREM in live</strong></p><br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus sequi omnis reprehenderit nemo labore nihil tempora quia odit at. Accusantium facilis molestias libero unde, veritatis eaque explicabo ab magni. Adipisci.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius incidunt reiciendis fugiat animi neque vero totam voluptatibus tenetur soluta consectetur, quidem similique alias debitis perspiciatis sunt minus doloribus ipsum ipsam.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quibusdam rerum id vero repellat libero sapiente recusandae dolorem animi reiciendis? Fugiat aperiam, numquam ex provident id ipsum incidunt modi dolor.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat a iusto cumque, voluptate aspernatur dolor non error aut neque rerum, id, consequatur odit at magni reprehenderit officiis sequi nesciunt maxime.</p>
-                <div class="mediaLorem">
-                    <img src="../../source/img/lorem-in-live.png" alt="lorem-in-live" class="imagenResponsive">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H-4yodHCvu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </article>
+        <div class="evento container">
+                <h1 class="evento__titulo">Eventos</h1>
+                <article class="evento__article">
+                    <h4 class="evento__article--artista">18/12/21 - <strong>LOREM in live</strong></h4><br>
+                    <p class="evento__article--nota">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus sequi omnis reprehenderit nemo labore nihil tempora quia odit at. Accusantium facilis molestias libero unde, veritatis eaque explicabo ab magni. Adipisci.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius incidunt reiciendis fugiat animi neque vero totam voluptatibus tenetur soluta consectetur, quidem similique alias debitis perspiciatis sunt minus doloribus ipsum ipsam.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quibusdam rerum id vero repellat libero sapiente recusandae dolorem animi reiciendis? Fugiat aperiam, numquam ex provident id ipsum incidunt modi dolor.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat a iusto cumque, voluptate aspernatur dolor non error aut neque rerum, id, consequatur odit at magni reprehenderit officiis sequi nesciunt maxime.</p>
+                    <div class="mediaArtista">
+                        <img class="mediaArtista__pic" src="../../source/img/lorem-in-live.png" alt="lorem-in-live" class="imagenResponsive">
+                        <iframe class="mediaArtista__video" width="560" height="315" src="https://www.youtube.com/embed/H-4yodHCvu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+        </div>
     </main>
     <footer class=" footer text-center text-lg-start text-white" style="background-color: #45526e">
         <div class="container p-4 pb-0">
