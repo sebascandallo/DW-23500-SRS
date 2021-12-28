@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilo navbar*/
+
+.containerBar__menu {
+    font-size: 15px;
+}
+
+.containerBar__menu {
+    transition: all 0.4s linear;
+    color: #333;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.containerBar__menu:hover {
+    background: #b3166caf;
+    border-radius: 10px;
+}
+
+.containerBar__menu--disabled {
+    font-style: italic;
+}
+
+/*Main*/
+.articleSection {
+    background-color: aquamarine;
+}
+
+/*Grid logos*/
+.logos {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "birra trevi papas"
+        "social cuadra drink"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr repeat(2, 3fr);
+    text-align: center;
+    align-items: center;
+    row-gap: 2rem;
+    width: 96%;
+}
+
+.logos__titulo {
+    grid-area: titulo;
+}
+
+.logos__logo--birra {
+    grid-area: birra;
+}
+
+.logos__logo--cuadra {
+    grid-area: cuadra;
+}
+
+.logos__logo--papas {
+    grid-area: papas;
+}
+
+.logos__logo--social {
+    grid-area: social;
+}
+
+.logos__logo--trevi {
+    grid-area: trevi;
+}
+
+.logos__logo--drink {
+    grid-area: drink;
+}
+
+/* Imgagenes responsive y animaciones*/
+.logos__responsive {
+    border-radius: 10%;
+    width: 60%;
+    height: auto;
+}
+
+.logos__responsive:hover
+{	transform: scale(1.2, 1.2);
+	z-index: 9;
+}
+
+.logosCartaResponsive {
+    border-radius: 10%;
+    width: 10%;
+    height: auto;
+    margin: 1rem 2rem;
+}
+.logosCartaResponsive:hover
+{	transform: scale(1.2, 1.2);
+	z-index: 9;
+}
+
+/*Footer*/
+.footer {
+    margin-top: 2rem;
+}
+
+/*La Carta*/
+.cartaTitulo {
+    padding: 8rem 0 2rem 0;
+    font-size: 2rem;
+}
+
+.imageMain {
+    width: 100%;
+    margin: 0;
+}
+
+.containerCarta {
+    margin-top: 8rem;
+}
+
+/*media Query*/
+@media (max-width: 576px) {
+    .main .container .fondo {
+    background-color: white; } 
+}
+
+@media (max-width: 1200px) {
+    .cartaLogos img, .imagenResponsive {
+        margin: 5px 5px;
+    }
+}

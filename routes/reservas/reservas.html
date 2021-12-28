@@ -9,6 +9,7 @@
     <meta name="author" content="Sebastian Scandallo">
     <title>PATIO ALAMEDA | Gastronomía Urbana</title>
     <link rel="stylesheet" href="../../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="./source/icons/icon-ferias.png" type="image/x-icon">
@@ -53,28 +54,32 @@
         </nav>
     </header>
     <main class="main">
-        <div class="container__form container">
-            <h1 class="container__form--titulo">Reservas</h1>
-            <form class="container__form--form" action="" method="">
-                <p>Elige tu lugar: 
-                    <select name="locales" id="">
-                        <option value="0">------------------</option>
-                        <option value="1">Pintó una birra</option>
-                        <option value="2">La cuadra burguer</option>
-                        <option value="3">Papas Social Club</option>
-                        <option value="4">Social café</option>
-                        <option value="5">Trevi Helados</option>
-                        <option value="6">Drink Box</option>
-                        <option value="7">El patio</option>
-                    </select>
-                </p>
-                <p>Nombre y Apellido: <input type="text" name="nombre-apellido"></p>
-                <p>E-Mail: <input type="email" name="email"></p>
-                <p>Teléfono: <input type="number" name="tel"></p>
-                <p>Mensaje: <input type="text" name="mensaje"></p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar formulario">
-            </form>
+        <div class="container containerReservas">
+            <div class="encabezadoForm">
+                <h1 class="encabezadoForm__titulo">Reservas</h1>
+            </div>
+            <div class="container__form row">
+                <form class="form" action="" method="">
+                    <p>Elige tu lugar: 
+                        <select name="locales" id="">
+                            <option value="0">------------------</option>
+                            <option value="1">Pintó una birra</option>
+                            <option value="2">La cuadra burguer</option>
+                            <option value="3">Papas Social Club</option>
+                            <option value="4">Social café</option>
+                            <option value="5">Trevi Helados</option>
+                            <option value="6">Drink Box</option>
+                            <option value="7">El patio</option>
+                        </select>
+                    </p>
+                    <p>Nombre y Apellido: <input type="text" name="nombre-apellido"></p>
+                    <p>E-Mail: <input type="email" name="email"></p>
+                    <p>Teléfono: <input type="number" name="tel"></p>
+                    <p>Mensaje: <input type="text" name="mensaje"></p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar formulario">
+                </form>
+            </div>
         </div>
     </main>
     <footer class=" footer text-center text-lg-start text-white" style="background-color: #45526e">

@@ -1,9 +1,10 @@
-/*npm run watch-css*/
+.multimediaStyle {
+  border-radius: 25px; }
+
 * {
   margin: 0;
   padding: 0; }
 
-/*Estilo navbar*/
 .containerBar {
   font-size: 15px; }
   .containerBar__menu {
@@ -16,11 +17,38 @@
     background: #b3166caf;
     border-radius: 10px; }
 
-/*Main*/
-.articleSection {
-  background-color: aquamarine; }
+.navbar-brand {
+  font-family: "Oswald", sans-serif; }
 
-/*Grid logos*/
+.articleSection {
+  background-color: aquamarine;
+  text-align: center; }
+  .articleSection__h1, .articleSection h4 {
+    font-family: "Oswald", sans-serif; }
+  .articleSection__h1 {
+    font-size: 4rem; }
+  .articleSection__h4 {
+    font-size: 1.5rem; }
+
+.textoDescripcion {
+  color: #3f3c3c;
+  font-size: medium; }
+  .textoDescripcion__emoji {
+    font-size: xx-large; }
+  .textoDescripcion__producto {
+    color: tomato;
+    font-family: "Courier New", Courier, monospace;
+    font-size: x-large;
+    font-weight: bolder; }
+  .textoDescripcion__texto {
+    color: #3f3c3c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium; }
+  .textoDescripcion__h4 {
+    color: #3f3c3c;
+    font-size: 1.5rem;
+    text-align: center; }
+
 .logos {
   display: grid;
   grid-template-areas: "titulo titulo titulo" "birra trevi papas" "social cuadra drink";
@@ -51,7 +79,7 @@
   width: 60%;
   height: auto; }
   .logos__responsive:hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
     z-index: 9; }
 
 .logosCartaResponsive {
@@ -80,22 +108,20 @@
   margin-top: 8rem; }
 
 /*RESERVAS*/
-.container__form {
-  margin-top: 5rem; }
+.containerReservas {
+  margin-top: 6rem; }
 
 /*EVENTOS*/
 .evento {
   margin-top: 5rem; }
 
-/*UBICACION*/
 .ubic {
   margin-top: 5rem; }
 
-/*media Query*/
-@media (max-width: 576px) {
-  .main .container .fondo {
+@media (max-width: 750px) {
+  .articleSection {
     background-color: white; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 750px) {
   .cartaLogos img, .imagenResponsive {
     margin: 5px 5px; } }

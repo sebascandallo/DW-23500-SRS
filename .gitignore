@@ -1,0 +1,6 @@
+# Ignorar las carpetas:
+node_modules
+package-lock.json
+package.json
+# Ignora archivo de uso interno.
+zCSSviejo.css
