@@ -2,7 +2,7 @@
 
 // Variables
 $fuente-logo: 'Oswald', sans-serif;
-$color-logo: red;
+$color-logo: rgb(46, 44, 44);
 $fuente-navbar: Arial, Helvetica, sans-serif;
 $estilo-disabled: italic;
 $hover-bg: #b3166caf;
@@ -12,6 +12,7 @@ $texto-color: rgb(63, 60, 60);
 $tamaño-emojis: xx-large;
 $tomato: tomato;
 $curier: 'Courier New', Courier, monospace;
+$textoLogo-tamaño: 4rem;
 
 // Mapas
 $headings: (
@@ -24,7 +25,9 @@ $headings: (
 );
 
 $h1: map-get($headings, h1);
+$h3: map-get($headings, h3);
 $h4: map-get($headings, h4);
+
 
 // Mixin
 @mixin textoDescriptivo {
@@ -144,8 +147,8 @@ $h4: map-get($headings, h4);
 }
 
 
-/* Imgagenes responsive y animaciones*/
-.logos__responsive {
+// Imgagenes responsive y animaciones
+.logos__responsive, .containerReservas__img--img {
     border-radius: 10%;
     width: 60%;
     height: auto;
@@ -166,12 +169,12 @@ $h4: map-get($headings, h4);
     }
 }
 
-/*Footer*/
+// Footer
 .footer {
     margin-top: 2rem;
 }
 
-/*LA CARTA*/
+// LA CARTA
 .cartaTitulo {
     padding: 8rem 0 2rem 0;
     font-size: 2rem;
@@ -186,19 +189,52 @@ $h4: map-get($headings, h4);
     margin-top: 8rem;
 }
 
-/*RESERVAS*/
+// RESERVAS
 .containerReservas {
-    margin-top: 6rem;
+    margin-top: 2rem;
+    background-color: $bg-aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5rem 0;
+    border-radius: 25px;
+    &__img--img {
+    }
 }
 
-/*EVENTOS*/
+.encabezadoForm {
+    margin: 8rem 0 0 0;
+    text-align: center;
+}
+
+
+
+// EVENTOS
 .evento {
     margin-top: 5rem;
 }
 
+// Horario
+.horario__abierto {
+    &--dias, &--horarios {
+    font-size: $h3;
+    color: $tomato;
+    font-family: $fuente-navbar;
+    text-align: center;
+}
+}
+
 // UBICACION
 .ubic {
-    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    &__logo {
+        width: 250px;
+        height: 250px;
+    }
+    &__map {
+        border-radius: 25px;
+    }
 }
 
 // media Query
@@ -207,6 +243,14 @@ $h4: map-get($headings, h4);
         background-color: white; 
     } 
 }
+
+@media (max-width: 750px) {
+    .containerReservas__img--img {
+        display: none; 
+    } 
+}
+
+
 
 @media (max-width: 750px) {
     .cartaLogos img, .imagenResponsive {

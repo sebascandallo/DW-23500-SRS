@@ -1,3 +1,35 @@
+// Variables
+$fuente-logo: 'Oswald', sans-serif;
+$color-logo: rgb(46, 44, 44);
+$fuente-navbar: Arial, Helvetica, sans-serif;
+$estilo-disabled: italic;
+$hover-bg: #b3166caf;
+$bg-aqua: aquamarine;
+$texto-centrado: center;
+$texto-color: rgb(63, 60, 60);
+$tamaño-emojis: xx-large;
+$tomato: tomato;
+$curier: 'Courier New', Courier, monospace;
+$textoLogo-tamaño: 4rem;
+
+
 .multimediaStyle {
     border-radius: 25px;
+}
+
+.primerTitulo {
+    margin-top: 8rem;
+    color: $color-logo;
+    text-align: $texto-centrado;
+    font-family: $fuente-navbar;
+    font-size: $textoLogo-tamaño;
+}
+
+.subTitulo1 {
+    margin-top: 1rem;
+    color: $color-logo;
+    text-align: $texto-centrado;
+    font-family: $fuente-navbar;
+    font-size: $h4;
+
 }
