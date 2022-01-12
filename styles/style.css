@@ -6,7 +6,7 @@
   color: #2e2c2c;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4rem; }
+  font-size: 3rem; }
 
 .subTitulo1 {
   margin-top: 1rem;
@@ -128,16 +128,43 @@
 
 .containerReservas {
   margin-top: 2rem;
-  background-color: aquamarine;
+  background-color: #9dc4df;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 5rem 0;
   border-radius: 25px; }
+  .containerReservas__img--img {
+    width: 220px; }
 
 .encabezadoForm {
   margin: 8rem 0 0 0;
   text-align: center; }
+
+.form .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
+
+.form input {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
+
+.container__form select {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
 
 .evento {
   margin-top: 5rem; }
@@ -152,8 +179,8 @@
   display: flex;
   justify-content: space-around; }
   .ubic__logo {
-    width: 250px;
-    height: 250px; }
+    width: 150px;
+    height: 150px; }
   .ubic__map {
     border-radius: 25px; }
 

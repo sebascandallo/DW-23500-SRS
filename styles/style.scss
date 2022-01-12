@@ -6,7 +6,7 @@ $color-logo: rgb(46, 44, 44);
 $fuente-navbar: Arial, Helvetica, sans-serif;
 $estilo-disabled: italic;
 $hover-bg: #b3166caf;
-$bg-aqua: aquamarine;
+$bg-aqua: rgb(168, 210, 226);
 $texto-centrado: center;
 $texto-color: rgb(63, 60, 60);
 $tamaño-emojis: xx-large;
@@ -202,19 +202,48 @@ $h4: map-get($headings, h4);
 // RESERVAS
 .containerReservas {
     margin-top: 2rem;
-    background-color: $bg-aqua;
+    background-color: rgb(157, 196, 223);
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     padding: 5rem 0;
     border-radius: 25px;
     &__img--img {
+        width: 220px;
     }
 }
 
 .encabezadoForm {
     margin: 8rem 0 0 0;
     text-align: center;
+}
+
+.form .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form input {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container__form select {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 // EVENTOS
@@ -237,8 +266,8 @@ $h4: map-get($headings, h4);
     display: flex;
     justify-content: space-around;
     &__logo {
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
     }
     &__map {
         border-radius: 25px;
